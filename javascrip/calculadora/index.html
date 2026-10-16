@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="tela" readonly>
+        <div id="botoes">
+            <button onclick="limpar()">C</button>
+            <button onclick="adicionarValor('/')">/</button>
+            <button onclick="adicionarValor('*')">×</button>
+            <button onclick="apagar()">⌫</button>
+            
+            <button onclick="adicionarValor('7')">7</button>
+            <button onclick="adicionarValor('8')">8</button>
+            <button onclick="adicionarValor('9')">9</button>
+            <button onclick="adicionarValor('-')">-</button>
+            
+            <button onclick="adicionarValor('4')">4</button>
+            <button onclick="adicionarValor('5')">5</button>
+            <button onclick="adicionarValor('6')">6</button>
+            <button onclick="adicionarValor('+')">+</button>
+            
+            <button onclick="adicionarValor('1')">1</button>
+            <button onclick="adicionarValor('2')">2</button>
+            <button onclick="adicionarValor('3')">3</button>
+            <button onclick="adicionarValor('0')" class="zero">0</button>
+            
+            <button onclick="adicionarValor('.')">.</button>
+            <button onclick="calcular()" class="igual">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
